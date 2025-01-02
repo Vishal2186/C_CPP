@@ -59,38 +59,13 @@ void displaylist(struct node* node){
 }
 int main(){
     struct node* head = NULL;
-     insertend(&head,'l');
+     insertend(&head,'v');
     insertfront(&head,'K');
-    insertafter(head,'h');
-    insertafter(head->next,'u');
-    insertafter(head->next->next,'s');
-    insertafter(head->next->next->next,'h');
-    insertafter(head->next->next->next->next,'i');
-
-    insertafter(head->next->next->next->next->next,'a');
-    insertafter(head->next->next->next->next->next->next,'n');
-    insertafter(head->next->next->next->next->next->next->next,'d');
-
-    insertafter(head->next->next->next->next->next->next->next->next,'V');
-    insertafter(head->next->next->next->next->next->next->next->next->next,'i');
-    insertafter(head->next->next->next->next->next->next->next->next->next->next,'s');
-    insertafter(head->next->next->next->next->next->next->next->next->next->next->next,'h');
-    insertafter(head->next->next->next->next->next->next->next->next->next->next->next->next,'a');
-    printf("\n");
+    insertafter(head,'&');
+    
     displaylist(head);
     printf("\n");
     
-    deletenode(&head,head->next->next->next->next->next->next->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next->next);
-    deletenode(&head,head->next->next->next->next->next->next);
-    printf("\n");
-displaylist(head);
-    printf("\n");
+   
     return 0;
 }
