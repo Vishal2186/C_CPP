@@ -1,2 +1,2 @@
-# C-CPP
+# C & CPP
 Basic programe of C/C++ for practice and logic building...
